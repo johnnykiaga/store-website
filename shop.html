@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop — Quire</title>
+  <meta name="description" content="Shop notebooks, pens, ink, paper, and desk goods from Quire.">
+  <meta name="theme-color" content="#24382c">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,460;0,9..144,560;1,9..144,460&family=Outfit:wght@380;500;560&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="announce">Complimentary cotton wrap on orders over $75. <a href="shop.html">Shop the edit</a></div>
+  <header class="header">
+    <div class="wrap header-row">
+      <button class="icon-btn menu-btn" type="button" data-menu aria-expanded="false" aria-label="Open menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h12"></path></svg></button>
+      <a class="wordmark" href="index.html">Quire<span>.</span></a>
+      <nav class="nav" aria-label="Primary"><a href="shop.html" aria-current="page">Shop</a><a href="shop.html?cat=Notebooks">Notebooks</a><a href="shop.html?cat=Pens">Pens</a><a href="shop.html?cat=Desk">Desk</a><a href="journal.html">Journal</a><a href="about.html">About</a></nav>
+      <div class="header-tools">
+        <button class="icon-btn" type="button" data-search-open aria-expanded="false" aria-label="Search"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.2-3.2"></path></svg></button>
+        <a class="icon-btn bag" href="cart.html" aria-label="Shopping bag"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6.5 8h11l-.8 12H7.3L6.5 8z"></path><path d="M9 8V7a3 3 0 0 1 6 0v1"></path></svg><span class="bag-count" data-cart-count>0</span></a>
+      </div>
+    </div>
+    <div class="wrap search-panel" data-search>
+      <form action="shop.html" method="get">
+        <input name="q" type="search" placeholder="Search notebooks, pens, paper" aria-label="Search the shop">
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+    </div>
+    <nav class="wrap mobile-nav" data-mobile aria-label="Mobile"><a href="shop.html" aria-current="page">Shop</a><a href="shop.html?cat=Notebooks">Notebooks</a><a href="shop.html?cat=Pens">Pens</a><a href="shop.html?cat=Desk">Desk</a><a href="journal.html">Journal</a><a href="about.html">About</a><a href="cart.html">Bag</a></nav>
+  </header>
+  <main>
+  <section class="wrap page-hero">
+    <p class="kicker">The edit</p>
+    <h1 data-shop-title>The edit</h1>
+    <p class="muted" data-shop-count></p>
+  </section>
+  <div class="wrap shop-layout">
+    <div class="filters" aria-label="Categories">
+      <button type="button" data-cat="All" onclick="location.href='shop.html?cat=All'">All</button><button type="button" data-cat="Notebooks" onclick="location.href='shop.html?cat=Notebooks'">Notebooks</button><button type="button" data-cat="Pens" onclick="location.href='shop.html?cat=Pens'">Pens</button><button type="button" data-cat="Ink & Paper" onclick="location.href='shop.html?cat=Ink%20%26%20Paper'">Ink & Paper</button><button type="button" data-cat="Desk" onclick="location.href='shop.html?cat=Desk'">Desk</button>
+    </div>
+    <div>
+      <div class="filter-row" aria-label="Categories">
+        <button class="chip" type="button" data-cat="All" onclick="location.href='shop.html?cat=All'">All</button><button class="chip" type="button" data-cat="Notebooks" onclick="location.href='shop.html?cat=Notebooks'">Notebooks</button><button class="chip" type="button" data-cat="Pens" onclick="location.href='shop.html?cat=Pens'">Pens</button><button class="chip" type="button" data-cat="Ink & Paper" onclick="location.href='shop.html?cat=Ink%20%26%20Paper'">Ink & Paper</button><button class="chip" type="button" data-cat="Desk" onclick="location.href='shop.html?cat=Desk'">Desk</button>
+      </div>
+      <div class="grid" data-shop></div>
+    </div>
+  </div>
+  </main>
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="wordmark" href="index.html">Quire<span>.</span></a>
+        <p>Paper, pens, and the quiet tools of a working desk. A static shop template you can rename.</p>
+        <form class="newsletter" data-newsletter>
+          <input type="email" required placeholder="Email for the list" aria-label="Email">
+          <button class="btn btn-primary" type="submit">Join</button>
+        </form>
+        <p class="fine">No account. The sample list stays in this browser.</p>
+      </div>
+      <div>
+        <h3>Shop</h3>
+        <a href="shop.html">The edit</a>
+        <a href="shop.html?cat=Notebooks">Notebooks</a>
+        <a href="shop.html?cat=Pens">Pens</a>
+        <a href="shop.html?cat=Ink%20%26%20Paper">Ink & paper</a>
+        <a href="shop.html?cat=Desk">Desk</a>
+      </div>
+      <div>
+        <h3>House</h3>
+        <a href="about.html">About the press room</a>
+        <a href="journal.html">Journal</a>
+        <a href="cart.html">Your bag</a>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <p>Press Room No. 4</p>
+        <p>Open Tue–Sat</p>
+        <p>hello@quire.example</p>
+      </div>
+    </div>
+    <div class="wrap legal"><span>© Quire Stationers</span><span>Static template for Cloudflare Pages</span></div>
+  </footer>
+  <div class="toast" role="status"></div>
+  <script src="js/catalog.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
